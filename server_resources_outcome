@@ -62,3 +62,19 @@ The Disk space usuage:
 Filesystem                                    Size  Used Avail Use% Mounted on
 innfs6rd:/vol/gcshome2/gcshome2/vmascarenhas   28T   20T  7.9T  72% /home/vmascarenhas
 -------------------------------------
+#####################################
+Fri Jan  9 15:00:01 EST 2026
+#####################################
+-------------------------------------
+The CPU count:
+32
+------------------------------------
+The RAM usuage:
+              total        used        free      shared  buff/cache   available
+Mem:          124Gi        86Gi       1.1Gi       410Mi        37Gi        36Gi
+Swap:          29Gi        24Gi       5.6Gi
+-------------------------------------
+The Disk space usuage:
+Filesystem                                    Size  Used Avail Use% Mounted on
+innfs6rd:/vol/gcshome2/gcshome2/vmascarenhas   28T   20T  7.8T  72% /home/vmascarenhas
+-------------------------------------
