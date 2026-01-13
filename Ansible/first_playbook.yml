@@ -1,0 +1,5 @@
+---
+- name:create a file
+  hosts:all
+  become:true
+  become_user:root
