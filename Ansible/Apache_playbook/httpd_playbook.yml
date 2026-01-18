@@ -1,0 +1,27 @@
+---
+- name: Install and configure Apache web server
+  hosts: all
+  become: true
+  become_user: root
+
+  tasks:
+          - name: Install Apache Web Server
+            yum:
+                    name: httpd
+                    state: present
+          - name: start and enable Apache Web Server
+            service:
+                    name: httpd
+                    state: started
+                    enabled: yes
+          - name: Simple HTML code
+            copy:
+                    content: |
+                            <html>
+                            <head><title>Ansible</title></head>
+                            <body>
+                            <h1> Welcome to the Ansible Playbook </h1>
+                            </body>
+                            </html>
+                    dest: /var/www/html/index.html     
+
