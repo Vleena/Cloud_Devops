@@ -1,0 +1,14 @@
+Inventory File: An Ansible inventory is a text file that lists the managed nodes (servers) where tasks defined in your playbook will be executed. It allows you to group servers (e.g., [webservers]) to target multiple systems at once.
+Ansible Playbook Goal: The playbook will automate the installation of the Apache HTTP Server (package name httpd) on RHEL systems and can be configured to deploy a custom index.html file with the message "Welcome to the Ansible Playbook". 
+Steps to Execute:-
+1:- Install Ansible:
+  pip3 install ansible -y
+2:- Verify Installation:
+  Check the version to ensure it is installed correctly.
+  ansible --version
+3:- Execute the Playbook:
+  Run the ansible-playbook command with root privileges
+  ansible-playbook -i Inventory httpd_playbook.yml
+4:- Verify Deployment:
+  Once the playbook finishes, open a browser and navigate to the server's address to see your message.
+  http://<public-ip>:80 
